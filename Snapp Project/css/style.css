@@ -1,0 +1,1078 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'fa-Iran-sans-web-bold', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+   
+}
+body{
+    @font-face {
+        font-family: 'fa-Iran-sans-web-bold';
+        src: url('assets/fonts/fa-Iran-sans-web-bold.woff2') format('woff2'),
+             url('assets/fonts/fa-Iran-sans-web-light.woff2') format('woff');  
+      }
+}
+
+.container{
+    width: 100%;  
+}
+/*------------------ Main Header -------------------*/
+.container  #bar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position:sticky;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1200;
+    padding-right: 11.5% ;
+    padding-left: 11.5% ;
+    border-bottom-style: solid;
+    border-bottom-width: 1px !important;
+    color: #3f3f3f !important;
+    background: #fff !important;
+    border-color: #e5e5e5 !important;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    height: 96px;
+    min-height: 96px;
+   
+}
+/*------------------ Responsive Menu ---------------------*/
+.container >  #bar > #Responsive-Menu{
+    display: none;
+}
+/*------------------ Menu Bar Without Logo ---------------------*/
+.container > #bar >  nav > span > a{
+    text-decoration: none;
+    color: #3f3f3f;
+    font-size: 15.2px;   
+}
+nav .margin-a{
+    margin-right: 32px;
+}
+/*------------------ Banner ---------------------*/
+#banner{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+}
+/*----------- Left Part Of Banner That Contains The Photo --------------*/
+#banner  #left{
+    background-image: url(../assets/images/intro_desktop.jpg);
+    width: 50%;
+    height: 500px;
+    background-size:cover;
+    background-position: center;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+/*----------- Right Part Of Banner That Contains TxT & Form --------------*/
+#banner  #right{
+    background-color: #21aa58;
+    width: 49.980000000000004%;
+    max-width: 49.980000000000004%;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;  
+}
+/*----------- Title Of Right Banner --------------*/
+#banner #right .titr{
+    direction: rtl;
+    padding-right: 10%;
+    padding-left: 24px;
+    padding-top: 24px;
+    color: #fff;   
+    margin-bottom: 16px;
+    font-size: 36px;
+    font-weight: 700;   
+}
+/*----------- Subtitle Of Right Banner -----------*/
+#banner #right  .sub-titr{
+    direction: rtl;
+    font-size: 20.3px;
+    padding-right: 10%;
+    padding-left: 24px;
+}
+/*----------- Form Of Right Banner Contains Mobile Number -----------*/
+form{
+    direction: rtl;
+    justify-content:end;
+    position: relative;
+    top: 0;
+    left: 130px;
+    outline: none;
+    height: 56px ;
+    width: 68%;    
+}
+/*-------- Flex Class For Stands In a Row --------*/
+#send-link .flex{
+    display: flex;
+    border-bottom: 1px solid #fff;
+    align-items: center;
+    width: 70%;
+}
+/*-------- Dot Style Inside Placeholder --------*/
+form .flex #dot{
+    background-color: #fff;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;    
+}
+/*-------- ،Telephone Number Input --------*/
+input[type=tel]{
+    background: none;
+    outline: none;
+    border: none;
+    color: whitesmoke;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    flex-direction: row;   
+}
+input[type=tel]::placeholder{
+    color: rgba(240, 248, 255, 0.79); 
+}
+#send-link #link{
+    background: #fff ;
+    border-color: #e5e5e5 ;
+    color: #00d16f;
+    border-radius: 12px;
+    height: 40px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700; 
+    width: 30% ;
+    margin-right: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+#send-link #link span{
+    color: #00d16f;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;   
+}
+/*------------------- Web application ----------------------*/
+#webapp{
+    background: none;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 17px;
+    height: 50px;
+    width: 40%;
+    display: flex;
+    align-items:center;
+    text-align: center;
+    margin-left: 50%;   
+}
+#webapp a{
+    text-decoration: none;
+    color: aliceblue;
+    width: 100%;    
+}
+.hidden{
+    display: none;
+}
+/*------------------ Download App from Diffrent Ways-----------------------*/
+#Download{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center ;
+    width: 100%;
+    height: 200px;
+    padding: 50px 10%;
+}
+#Download .store img{
+    width:160px;
+    height: 47px;
+}
+/*---------------------- Services ------------------------------*/
+#Needs{
+    direction: rtl;
+    background-color: #F2F5F8;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-left: max(140px, 15%);
+    padding-right: max(140px, 15%);
+    margin-bottom: 40px;
+}
+#Needs h2{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    padding-top: 40px;
+    padding-bottom: 40px;  
+}
+#Needs .Services{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3f 3f 3f 3f 3f 3f 3fr;
+    gap: 20px;
+}
+#Needs .Services a{
+    text-decoration: none;
+    display: flex;
+    background-color: #fff;
+    border-radius: 12px;
+    align-items: center;
+    padding: 10px;
+}
+.FlexPadd{
+    padding: 10px;  
+}
+.textalign{
+    color: #000;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 16px;
+}
+.textsize{
+    font-size: 14px;
+    color: #a3a3a3;
+}
+/*---------------- Restaurant & Super App -------------------*/
+div.app{
+    width: 100%; 
+}
+.app #rest {
+    padding: 40px;
+    width: 70%;
+    background-image: url(../assets/images/Food-Sefaresh.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover; 
+    display: flex;
+    justify-content: center;
+    border: none;
+    margin: 20px auto;
+    height: 300px;
+    border-radius: 20px;   
+}
+.super{
+    width: 100%;
+    height: 500px;   
+}
+.super .matn{
+    width: 50%;
+    float: left;    
+}
+.super #app{ 
+    width: 50%;
+    background-image: url(../assets/images/super-app.jpg);
+    float: right;
+    height: 400px;
+    background-size: cover;
+}
+.matn #sartitr{
+    text-align: right;
+    margin: 16px 0 8px 0; 
+    padding-right: 40px;
+    padding-top: 40px;
+}
+.matn pre{
+    padding-right: 40px;
+    padding-left: 100px;
+    text-wrap:wrap;
+    direction: rtl;
+    color: #585858;
+    font-size: 14px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    white-space: pre-wrap;
+    text-align: justify;
+}
+.benefit{
+    display: flex;
+    position:relative;
+    left: 450px;
+    top: 280px;
+}
+.box{
+    width: 230px;
+    height: 190px;
+    background-color: #F2F5F8;
+    margin: 30px;
+    border-radius: 12px;
+}
+.box p{
+    padding-top: 15px;
+    font-size: 19px;
+}
+.box .para-box{
+    margin-top: 20px;
+    text-wrap: pretty;
+    text-align: justify;
+    font-weight: 300;
+    color: rgb(99, 98, 98);
+    font-size: 14px;
+    white-space: pre-wrap;
+}
+/*--------------- Sign Up Drivers -----------------*/
+#sign-up{
+    direction: rtl;
+    margin-top: 263px;
+    width: 100%;
+    background-color: #F2F5F8; 
+}
+#sign-up h2{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 36px;
+    font-weight: 700;
+}
+#sign-up #para-sign{
+    font-size: 20.3px;
+    font-weight: 500;
+    text-align: center;
+    color: #404040;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+#sign-up a {
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+#sign-up a button{
+    background-color: rgb(0, 209, 112);
+    border: none;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 17.08px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#sign-up video{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+.mazaya-driver{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 20px;
+    margin: 60px auto;
+}
+.mazaya-driver .points{
+    background-color: #fff;
+    border-radius: 9px;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    height: 200px;
+    display: flex;
+    align-items: center; 
+}
+.mazaya-driver .points  div .titr-points{
+    font-size: 16px;
+    font-weight: 700;
+}
+.mazaya-driver .points  div .para-points{
+    text-align: justify;
+    font-size: 14px;
+    color: #404040;
+    padding-top: 20px;
+    line-height: 1.7; 
+}
+footer{
+    width: 100vw;
+    
+    
+    
+}
+footer nav{
+    width: 100%;
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+}
+footer nav a{
+    text-decoration: none;  
+}
+footer div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+footer div div{
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    flex-direction: row;
+}
+footer div div a{
+    display: flex;
+    margin-left: 10px;
+}
+footer #namad{
+    direction: rtl;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 768px) ,  screen and (min-width: 600px){
+   
+    .container > #bar{
+        padding: 0;
+        width: 100%;    
+    }
+    main{
+        position: relative;
+    }
+    
+    .container > #bar  > nav > span{
+        display: none;  
+    }
+    .container > #bar > a{
+        display: none;   
+    }
+    .container > #bar > #Responsive-Menu {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content:left;
+        align-items: center;    
+    }
+    
+    .container > #bar > div > a  {
+       width: 100%;
+       
+    }
+    .container > #bar > div > a#Logo{
+        direction: ltr;
+        padding-left: 5%;
+    }
+   
+    #banner  #left{
+        display: none;  
+    }
+    
+    #banner  #right{
+        max-width: none;
+        width: 100%;
+        padding: 0;    
+    }
+    section#banner #right .titr{ 
+        font-size: 24px;       
+    }
+    #banner #right  .sub-titr{   
+        font-size: 17.3px;
+    }
+    form{
+        display: none;
+    }
+    #webapp{display: none;}
+    .hidden{    
+        background-color: #fff;
+        border-radius: 5px;
+        align-items:center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 55px;
+        border: 3px solid white;
+        margin: 5%;  
+    }
+    .hidden #Down-hidden{
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 700px;
+        line-height: 1.7;
+    }
+    #Download{
+        display: none;
+    }
+    #Needs{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #Needs h2{
+        font-size: 20px;  
+    }
+    #Needs .Services{
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+    .textsize{
+        display: none;
+    }
+    .app #rest {
+        width: 100%;
+        padding: 0;
+        background-size:cover;
+        background-position:right;
+        border: none;
+        border-radius: 0;
+    }
+    .super #app{
+        width: 100%;
+        background-image: url(../assets/images/super-app.jpg);
+        background-repeat: no-repeat;
+        float: right;
+        background-size: cover;
+        margin-bottom: 10%;
+    }
+    .box{
+        width: 90%;
+        background-color: #F2F5F8;
+        border-radius: 12px;
+        display: block;
+        margin: 65px;
+    }
+    .box img{
+        width: 200px;
+        height: 200px;
+        display: block;
+        margin: 0 auto;
+    }
+    .box pre{ 
+        width: 100%; 
+    }
+    .super{
+        display: block;
+        position: relative;
+    }
+    .super .matn{
+        width: 100%;
+        height: auto;
+        float: none;
+        direction: rtl;
+        align-items: center;
+    }
+    .benefit{
+        display: flex;
+        width: 100%;
+        direction: rtl;
+        position: unset;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        align-items: center;
+    }
+    .matn #sartitr{
+        text-align: center;
+        margin: 0; 
+        line-height: 1.7;
+        font-size:larger;
+        padding-top: 10%;
+        padding-right: 0;
+    }
+    .matn pre{
+        width: 100%;
+        padding-right: 5%;
+        padding-left: 5%;
+        text-wrap:wrap;
+        direction: rtl;
+        color: #585858;
+        font-size: 14px;
+        margin-top: 12px;
+        margin-bottom: 8px;
+        white-space: pre-wrap;
+        text-align: justify;
+        line-height: 30px;
+    }
+    #sign-up{
+        display: block;
+        position:absolute;
+        top: 132%;
+        height: auto;
+    }
+    #sign-up h2{
+        font-size: 25px; 
+    }
+    #sign-up #para-sign{
+        font-size: 15px;
+    }
+    .mazaya-driver{
+        grid-template-columns: 1fr;
+    }
+    .mazaya-driver .points{
+        display: block;
+        width: 100%;
+        height: 300px;
+    }
+    .mazaya-driver .points img{
+        display: block;
+        margin: 0 auto;
+    }
+    .mazaya-driver .points  div .para-points{
+        font-size: 10px;
+    } 
+    video{
+        width: 100%;
+    }
+    
+    footer{
+        position: relative;
+        top: 450vh;
+    }
+    footer nav{
+        flex-wrap: wrap;
+        
+    }
+    
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+   .container > #bar{
+    padding-left: 5%;
+    padding-right: 10% ;
+    width: 100%;    
+}
+main{
+    position: relative;
+}
+.container > #bar  > nav > span{
+    display: flex;
+}
+.container > #bar  > nav > span > a{
+    font-size: smaller;
+}
+nav .margin-a{
+    margin-right: 10px;
+}
+.container > #bar > a{
+   display: flex;   
+}
+.container > #bar > #Responsive-Menu {
+   display: none;  
+}
+.col-nav{
+    display: none;
+}
+.container > #bar > div > a  {
+   display: none;
+}
+.container > #bar > div > a#Logo{
+   display: none;
+}
+#banner  #left{
+    display: flex;
+}
+#banner  #right{
+    max-width: none;
+    width: 100%;
+    padding: 0;
+}
+section#banner #right .titr{
+    font-size: 24px; 
+}
+#banner #right  .sub-titr{
+    font-size: 17.3px;
+}
+form{
+    display: flex;
+}
+#webapp{display: flex;}
+.hidden{  
+   display: none;  
+}
+#Download{
+    display: flex;    
+}
+#Download .store img{
+    width:120px;
+}
+#Needs{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#Needs h2{ 
+    font-size: 20px;  
+}
+#Needs .Services{
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+.textsize{
+    display: flex;
+    font-size: smaller;
+}
+.app #rest {
+    width: 100%;
+    padding: 0;
+    background-size:cover;
+    background-position:right;
+    border: none;
+    border-radius: 0;
+}
+.super #app{
+    width: 100%;
+    background-image: url(../assets/images/super-app.jpg);
+    background-repeat: no-repeat;
+    float: right;
+    
+    background-size: cover;
+    margin-bottom: 10%;
+}
+.box{ 
+    width: 100%;
+    background-color: #F2F5F8;
+    border-radius: 12px;
+    display: block;
+    margin: 25px;    
+}
+.box img{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin: 0 auto;
+}
+.box pre{
+    width: 100%; 
+}
+.super{
+    display: block;
+    position: relative;
+}
+.super .matn{
+    width: 100%;
+    height: auto;
+    float: none;
+    direction: rtl;
+    align-items: center; 
+}
+.benefit{
+    display: flex;
+    width: 100%;
+    direction: rtl;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+}
+.matn #sartitr{
+    text-align: center;
+    margin: 0; 
+    line-height: 1.7;
+    font-size:larger;
+    padding-top: 10%;
+    padding-right: 0;
+}
+.matn pre{
+    width: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
+    text-wrap:wrap;
+    direction: rtl;
+    color: #585858;
+    font-size: 14px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    white-space: pre-wrap;
+    text-align: justify;
+    line-height: 30px;
+}
+
+#sign-up{
+    display: block;
+    position:absolute;
+    top: 110%;
+    height: auto;
+}
+#sign-up h2{
+    font-size: 25px; 
+}
+#sign-up #para-sign{
+    font-size: 15px;
+}
+.mazaya-driver{
+    grid-template-columns: auto auto;
+}
+.mazaya-driver .points{
+    width: 100%;
+    height: 300px;
+}
+.mazaya-driver .points img{
+    margin: 0 auto;
+}
+.mazaya-driver .points  div .para-points{
+    font-size: 10px;
+}
+footer{
+    position: relative;
+    top:533vh;
+}
+footer nav{
+    flex-wrap: wrap;
+    padding-top: 5%;
+}
+}
+/* Large devices (laptops/desktops, 780px and up to 1000px) */
+@media screen and (min-width: 780px) and (max-width: 1000px){
+    .col-nav{
+        display: none;
+    }
+    #banner  #left{
+            width: 50%; 
+    }
+    #banner  #right{ 
+            width: 50%;
+    }
+    form{
+        display: flex;
+        padding-right: 10%;
+    }
+    #webapp{
+        width:60%;
+        display: flex;
+        padding: 10px;
+        margin-left: 32%;
+    }
+    #send-link #link{
+        width: 35% ;
+        max-width: 50% ;
+        margin-right: 16px;
+        cursor: pointer;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+    }
+    #send-link #link span{
+        font-size: 12px;
+        width: 100%;
+        padding: 5px;   
+    }
+    .app #rest {
+        display: block; 
+        width: 90%;
+        margin: 20px 6%;
+        padding: 0;
+        border-radius: 20px;   
+    }
+    .super .matn{
+        width: 50%;
+        float: left;
+        direction: rtl; 
+        align-items: center;   
+    }
+    .super #app{
+        width: 50%;
+        background-image: url(../assets/images/super-app.jpg);
+        background-repeat: no-repeat;
+        float: right;
+        height: 400px;
+        background-size: cover;
+    }
+    .matn #sartitr{
+        text-align: right;
+        margin: 16px 0 8px 0; 
+        padding-right: 40px;
+        padding-top: 40px;
+    }
+    .matn pre{
+        padding-right: 40px;
+        padding-left: 40px;
+        text-wrap:wrap;
+        direction: rtl;
+        text-align: justify;
+    }
+    .benefit{
+        display: flex;
+        direction: rtl;
+        position:absolute;
+        left: 0px;
+        top: 350px;
+        align-items: center;
+    }
+    .box{
+        width: 220px;
+        height: 190px;
+        border-radius: 12px;
+    }
+    .box pre{
+        direction: rtl;
+        margin-top: 20px;
+        text-wrap: wrap;
+        width:223px;
+        height: 60px;
+        white-space: pre-wrap;
+        font-size: 11.9px;
+        text-align: justify;
+        font-weight: 300;
+        color: rgb(99, 98, 98);
+    }
+    #sign-up{
+        margin-top: 10px;
+    }
+    #sign-up video{
+        width: 90%;
+    }
+    .mazaya-driver{
+        width: 90%;
+    }
+    .mazaya-driver .points{
+        background-color: #fff;
+        border-radius: 9px;
+        padding-right: 24px;
+        padding-left: 24px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+    }
+    .mazaya-driver .points  div .para-points{
+        text-align: justify;
+        font-size: 12px;
+        padding-top: 20px;
+    }
+    footer{
+        position: relative;
+        top: 1535px;
+    }
+    footer nav{
+        flex-wrap: wrap;
+        padding-top: 5%;
+    }
+}
+/* Large devices (laptops/desktops, 1000px and up) */
+@media screen and (min-width: 1000px) {
+    .container > #bar{
+        padding-left: 10%;
+        padding-right: 5% ;
+        width: 100%;    
+    }
+    .container > #bar  > nav > span > a{
+        font-size:16px;
+    }
+    nav .margin-a{
+        margin-right: 16px;
+    }    
+    .col-nav{
+        display: none;
+    }
+    #banner  #left{
+            width: 50%; 
+    }
+    #banner  #right{ 
+            width: 50%;
+    }
+    section#banner #right .titr {
+        font-size: 36px;
+    }
+    #banner #right .sub-titr {
+        font-size: 24px;
+    }
+    form{
+        width: 60%;
+        margin-left: 12%;
+    }
+    #Download{
+        justify-content: space-between;
+    }
+    #Download .store a img{
+        width:230px;
+        height: 70px;
+    }
+    #Needs h2{
+        font-size: 30px;
+    }
+    .app #rest {
+        display: block; 
+        height: 400px;
+        width: 90%;
+        margin: 20px 6%;
+        padding: 0;
+        border-radius: 20px;   
+    }
+    .super .matn{
+        width: 50%;    
+    }
+    .super #app{
+        width: 50%;
+    }
+    .matn #sartitr{
+        font-size: 25px;
+        text-align: right;
+        margin: 16px 0 8px 0; 
+        padding-right: 40px;
+        padding-top: 40px;
+    }
+    .matn pre{
+        font-size: large;   
+    }
+    .benefit{
+        position:absolute;
+        left: 10px;
+        top: 300px; 
+    }
+    .box{
+        width: 250px;
+        height: 200px;
+        border-radius: 12px;
+    }
+    .box pre{
+        font-size: 17.08px;
+        text-align: justify; 
+    }
+    #sign-up{
+        width: 100%;
+        margin-top: 10px;
+    }
+    #sign-up video{
+        width: 80%;
+    }
+    .mazaya-driver{
+        width: 80%;
+    }
+    .mazaya-driver .points{
+        height: 300px;
+        display: flex;   
+    }
+    .mazaya-driver .points  div .titr-points{
+        font-size: 20px;
+    }
+    .mazaya-driver .points  div .para-points{ 
+        font-size: 17px;
+        padding-top: 20px;
+    }
+    footer{
+        position: relative;
+        top: 1850px;
+
+    }
+    footer nav{
+        flex-wrap: wrap;
+       
+        
+    }
+  
+}
